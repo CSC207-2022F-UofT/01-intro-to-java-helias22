@@ -160,17 +160,9 @@ public class Basics {
      */
     public static int oddSum(int[] arr) {
         int current_sum = 0;
-
-        for (int j = 2; j <= arr.length - 1; j += 2) {
+        for (int j = 1; j < arr.length ; j += 2) {
             current_sum += arr[j];
         }
-        /* TODO (Task 5): Complete this method body using a for-loop.
-         *                You can find the length of an array by using the
-         *                .length attribute (e.g. arr.length)
-         *                You can index into arrays as we do in Python
-         *                (e.g. arr[i] gives you the item at index i).
-         */
-
         return current_sum;
     }
 
